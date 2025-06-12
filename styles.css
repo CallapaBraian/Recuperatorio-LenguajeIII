@@ -1,0 +1,55 @@
+body {
+    background: #251e1e url('fondo.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+}
+.container {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 0 8px #ccc;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 24px 24px 12px 24px;
+}
+form label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+}
+input[type="text"], input[type="date"], input[type="number"], select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+.btn {
+    width: 100%;
+    background: #0c417a;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 12px;
+    cursor: pointer;
+}
+.btn:hover {
+    background: #19324c;
+}
+.error {
+    color: #d8000c;
+    background: #ffd2d2;
+    border-radius: 6px;
+    padding: 8px;
+    margin-top: 10px;
+    display: none;
+}
