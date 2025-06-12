@@ -18,7 +18,7 @@ document.getElementById('ticket-form').addEventListener('submit', function(e) {
         return;
     }
 
-    // Establecer los Precios base ida/vuelta ,Precio por pasajero, al que se le debe agregar el %21 por IVA a cada boleto
+    // Establecer los Precios base ida/vuelta,Precio por pasajero, al que se le debe agregar el %21 por IVA a cada boleto
     const precios = {
         "COR-Cordoba": 120000,
         "MDZ-Mendoza": 210800,
