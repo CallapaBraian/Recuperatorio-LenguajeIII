@@ -10,7 +10,7 @@ document.getElementById('ticket-form').addEventListener('submit', function(e) {
     errorDiv.style.display = 'none';
     errorDiv.textContent = '';
 
-    // Realizo la Validación de fechas
+    // Realizo la Validación de fechas ,comparo que la fecha de la vuelta sea menor a la de la ida
     if (fechaVuelta <= fechaIda) {
         errorDiv.textContent = 'La fecha de Vuelta debe ser mayor a la de Ida.';
         errorDiv.style.display = 'block';
@@ -18,7 +18,7 @@ document.getElementById('ticket-form').addEventListener('submit', function(e) {
         return;
     }
 
-    // Establecer los Precios base ida/vuelta declaro las constantes
+    // Establecer los Precios base ida/vuelta ,Precio por pasajero, al que se le debe agregar el %21 por IVA a cada boleto
     const precios = {
         "COR-Cordoba": 120000,
         "MDZ-Mendoza": 210800,
